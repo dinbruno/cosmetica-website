@@ -20,6 +20,12 @@ function getLocale(request: NextRequest): string | undefined {
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
+
+  // Skip middleware for admin routes
+  if (pathname.startsWith("/admin")) {
+    return NextResponse.next();
+  }
+
   const pathnameIsMissingLocale = i18n.locales.every((locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`);
 
   if (pathnameIsMissingLocale) {
@@ -29,5 +35,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|images|marcas).*)"],
+  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|images|marcas|admin).*)"],
 };
