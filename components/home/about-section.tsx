@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 type Dictionary = {
@@ -13,9 +14,6 @@ type Dictionary = {
   text: string;
   button_text: string; // Added for button text
 };
-
-const WHATSAPP_NUMBER = "5541996949516";
-const WHATSAPP_LINK = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=Olá! Gostaria de saber mais sobre a Cosmética e seus farmacêuticos.`;
 
 const aboutImages = [
   {
@@ -115,9 +113,7 @@ export default function AboutSection({ dictionary }: { dictionary: Dictionary })
                 className="rounded-xl px-6 sm:px-10 py-3 sm:py-4 text-sm sm:text-base font-semibold shadow-lg hover:bg-primary/90 hover:scale-105 transition-all duration-300 w-full sm:w-auto"
                 asChild
               >
-                <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-                  {dictionary.button_text}
-                </a>
+                <Link href="/mission">{dictionary.button_text}</Link>
               </Button>
             </motion.div>
           </motion.div>

@@ -16,12 +16,12 @@
   },
   "about": {
     "title": {
-      "part1": "",
-      "highlight": "Assessoria",
-      "part2": " Farmacêutica Completa"
+      "part1": "Orientação Farmacêutica ",
+      "highlight": "Completa",
+      "part2": ""
     },
-    "text": "A Cosmética oferece assessoria farmacêutica em período integral. Nossa Atenção Farmacêutica é focada na orientação sobre o uso correto de medicamentos (interações, posologia, modo de usar), cosméticos e hábitos de vida saudáveis, direcionando para atendimento médico especializado quando necessário.",
-    "button_text": "Conheça Nossos Farmacêuticos"
+    "text": "A Cosmética oferece orientação farmacêutica em período integral. Nossa Atenção Farmacêutica tem foco no aconselhamento sobre o uso correto de medicamentos (interações, posologia, instruções de uso), cosméticos e hábitos de vida saudáveis, direcionando ao atendimento médico especializado quando necessário.",
+    "button_text": "Conheça sobre nós"
   },
   "professionals": {
     "title": {
