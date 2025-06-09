@@ -1,26 +1,26 @@
-"use client"
+"use client";
 
-import { usePathname, useRouter } from "next/navigation"
-import type { Locale } from "@/lib/i18n-config"
-import { Globe } from "lucide-react"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { usePathname, useRouter } from "next/navigation";
+import type { Locale } from "@/lib/i18n-config";
+import { Globe } from "lucide-react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 export default function LanguageSwitcher() {
-  const pathname = usePathname()
-  const router = useRouter()
+  const pathname = usePathname();
+  const router = useRouter();
 
   const redirectedPathName = (locale: Locale) => {
-    if (!pathname) return "/"
-    const segments = pathname.split("/")
-    segments[1] = locale
-    return segments.join("/")
-  }
+    if (!pathname) return "/";
+    const segments = pathname.split("/");
+    segments[1] = locale;
+    return segments.join("/");
+  };
 
-  const currentLocale = (pathname.split("/")[1] as Locale) || "pt"
+  const currentLocale = (pathname.split("/")[1] as Locale) || "pt-BR";
 
   const handleValueChange = (newLocale: string) => {
-    router.push(redirectedPathName(newLocale as Locale))
-  }
+    router.push(redirectedPathName(newLocale as Locale));
+  };
 
   return (
     <Select value={currentLocale} onValueChange={handleValueChange}>
@@ -29,9 +29,9 @@ export default function LanguageSwitcher() {
         <SelectValue placeholder="Idioma" />
       </SelectTrigger>
       <SelectContent align="end">
-        <SelectItem value="pt">PT-BR</SelectItem>
+        <SelectItem value="pt-BR">PT-BR</SelectItem>
         <SelectItem value="en">EN</SelectItem>
       </SelectContent>
     </Select>
-  )
+  );
 }

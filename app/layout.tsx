@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Cosmética - Farmácia de Manipulação",
     description: "Inovação e cuidado personalizado em cada fórmula.",
     type: "website",
-    locale: "pt_BR", // Default locale, can be dynamic
+    locale: "pt_BR", // Default locale
     // url: "YOUR_WEBSITE_URL", // Replace with your actual URL
     siteName: "Cosmética Farmácia de Manipulação",
     // images: [
@@ -48,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang={i18n.defaultLocale} className="!scroll-smooth">
+    <html lang="pt-BR" className="!scroll-smooth">
       <body className={cn("bg-white text-gray-800 antialiased", montserrat.className)} suppressHydrationWarning={true}>
         <SmoothScroll />
         {children}
