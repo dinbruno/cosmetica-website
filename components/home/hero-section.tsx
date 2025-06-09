@@ -1,37 +1,36 @@
-"use client"
+"use client";
 
-import { motion, useScroll, useTransform } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { ArrowDown } from "lucide-react"
-import Image from "next/image"
-import { TypeAnimation } from "react-type-animation"
-import { useEffect, useState } from "react"
+import { motion, useScroll, useTransform } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { ArrowDown } from "lucide-react";
+import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
+import { useEffect, useState } from "react";
 
 type Dictionary = {
-  subtitle: string
-  quote_button: string // Added for button text
-}
+  subtitle: string;
+  quote_button: string;
+  typing_texts: string[];
+};
 
-const WHATSAPP_NUMBER = "5541996949516"
-const WHATSAPP_LINK = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=Olá! Gostaria de fazer um orçamento.`
+const WHATSAPP_NUMBER = "5541996949516";
+const WHATSAPP_LINK = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=Olá! Gostaria de fazer um orçamento.`;
 
 export default function HeroSection({ dictionary }: { dictionary: Dictionary }) {
-  const { scrollYProgress } = useScroll()
-  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "10%"])
-  const contentOpacity = useTransform(scrollYProgress, [0, 0.25], [1, 0])
+  const { scrollYProgress } = useScroll();
+  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
+  const contentOpacity = useTransform(scrollYProgress, [0, 0.25], [1, 0]);
 
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 1024) // lg breakpoint
-    checkMobile()
-    window.addEventListener("resize", checkMobile)
-    return () => window.removeEventListener("resize", checkMobile)
-  }, [])
+    const checkMobile = () => setIsMobile(window.innerWidth < 1024); // lg breakpoint
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
-  const imageClipPath = isMobile
-    ? "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
-    : "polygon(20% 0, 100% 0, 100% 100%, 0% 100%)"
+  const imageClipPath = isMobile ? "polygon(0 0, 100% 0, 100% 100%, 0 100%)" : "polygon(20% 0, 100% 0, 100% 100%, 0% 100%)";
 
   return (
     <section
@@ -49,7 +48,7 @@ export default function HeroSection({ dictionary }: { dictionary: Dictionary }) 
           className="w-full"
         >
           <TypeAnimation
-            sequence={["QUALIDADE E ÉTICA", 3000, "ATENDIMENTO PERSONALIZADO", 3000, "TRATAMENTO ESPECIALIZADO", 3000]}
+            sequence={[dictionary.typing_texts[0], 3000, dictionary.typing_texts[1], 3000, dictionary.typing_texts[2], 3000]}
             wrapper="h1"
             cursor={true}
             repeat={Number.POSITIVE_INFINITY}
@@ -87,10 +86,7 @@ export default function HeroSection({ dictionary }: { dictionary: Dictionary }) 
             priority
             className="scale-105"
           />
-          <div
-            className="absolute inset-0 z-10 opacity-[0.03]"
-            style={{ backgroundImage: "url('/images/noise.png')" }}
-          />
+          <div className="absolute inset-0 z-10 opacity-[0.03]" style={{ backgroundImage: "url('/images/noise.png')" }} />
         </motion.div>
       </div>
 
@@ -100,13 +96,10 @@ export default function HeroSection({ dictionary }: { dictionary: Dictionary }) 
         transition={{ delay: 1.2, duration: 0.8 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30"
       >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-        >
+        <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}>
           <ArrowDown className="w-7 h-7 text-gray-600" />
         </motion.div>
       </motion.div>
     </section>
-  )
+  );
 }

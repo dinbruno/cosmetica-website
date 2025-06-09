@@ -10,7 +10,8 @@
   "hero": {
     "title": "Inovação e Cuidado Personalizado em Cada Fórmula.",
     "subtitle": "Na Cosmética, unimos a tradição da manipulação magistral com a mais alta tecnologia para promover sua saúde e bem-estar.",
-    "quote_button": "Faça um Orçamento"
+    "quote_button": "Faça um Orçamento",
+    "typing_texts": ["QUALIDADE E ÉTICA", "ATENDIMENTO PERSONALIZADO", "TRATAMENTO ESPECIALIZADO"]
   },
   "about": {
     "title": {
@@ -58,9 +59,13 @@
     },
     "subtitle": "Estamos prontos para atender você. Envie sua receita, dúvida ou sugestão.",
     "name": "Nome Completo",
+    "name_placeholder": "Seu nome completo",
     "email": "Seu Melhor E-mail",
+    "email_placeholder": "seu@email.com",
     "message": "Sua Mensagem",
+    "message_placeholder": "Digite sua mensagem aqui...",
     "send_button": "Enviar Mensagem Agora",
+    "form_title": "Envie sua Mensagem",
     "find_us": "Onde Nos Encontrar",
     "address_label": "Nosso Endereço",
     "phone_label": "Telefone Fixo",

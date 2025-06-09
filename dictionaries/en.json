@@ -10,7 +10,8 @@
   "hero": {
     "title": "Innovation and Personalized Care in Every Formula.",
     "subtitle": "At Cosmética, we blend the tradition of masterful compounding with the highest technology to promote your health and well-being.",
-    "quote_button": "Request a Quote"
+    "quote_button": "Request a Quote",
+    "typing_texts": ["QUALITY AND ETHICS", "PERSONALIZED SERVICE", "SPECIALIZED TREATMENT"]
   },
   "about": {
     "title": {
@@ -58,9 +59,13 @@
     },
     "subtitle": "We are ready to assist you. Send your prescription, question, or suggestion.",
     "name": "Full Name",
+    "name_placeholder": "Your full name",
     "email": "Your Best Email",
+    "email_placeholder": "your@email.com",
     "message": "Your Message",
+    "message_placeholder": "Type your message here...",
     "send_button": "Send Message Now",
+    "form_title": "Send Your Message",
     "find_us": "Where to Find Us",
     "address_label": "Our Address",
     "phone_label": "Phone",

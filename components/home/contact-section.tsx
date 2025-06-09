@@ -9,7 +9,6 @@ import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import { submitContactForm } from "@/app/actions/contact";
 import { useEffect, useRef } from "react";
-import CosmeticaMap from "@/components/map/cosmetica-map";
 
 type Dictionary = {
   title: {
@@ -19,9 +18,13 @@ type Dictionary = {
   };
   subtitle: string;
   name: string;
+  name_placeholder: string;
   email: string;
+  email_placeholder: string;
   message: string;
+  message_placeholder: string;
   send_button: string;
+  form_title: string;
   find_us: string;
   address_label: string;
   phone_label: string;
@@ -30,7 +33,6 @@ type Dictionary = {
   opening_hours_label: string;
   weekdays: string;
   saturdays: string;
-  view_on_google_maps: string;
 };
 
 const initialState = {
@@ -153,33 +155,28 @@ export default function ContactSection({ dictionary }: { dictionary: Dictionary 
             viewport={{ once: true }}
             className="space-y-6 lg:col-span-3 bg-gray-50 p-8 rounded-3xl shadow-xl"
           >
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">Envie sua Mensagem</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">{dictionary.form_title}</h3>
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                 {dictionary.name}
               </label>
-              <Input id="name" name="name" placeholder="Seu nome completo" className="rounded-lg py-3 px-4" required />
+              <Input id="name" name="name" placeholder={dictionary.name_placeholder} className="rounded-lg py-3 px-4" required />
             </div>
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                 {dictionary.email}
               </label>
-              <Input id="email" name="email" type="email" placeholder="seu@email.com" className="rounded-lg py-3 px-4" required />
+              <Input id="email" name="email" type="email" placeholder={dictionary.email_placeholder} className="rounded-lg py-3 px-4" required />
             </div>
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                 {dictionary.message}
               </label>
-              <Textarea id="message" name="message" placeholder="Digite sua mensagem aqui..." rows={5} className="rounded-lg py-3 px-4" required />
+              <Textarea id="message" name="message" placeholder={dictionary.message_placeholder} rows={5} className="rounded-lg py-3 px-4" required />
             </div>
             <SubmitButton text={dictionary.send_button} />
             {state?.message && <p className={`mt-4 text-sm ${state.success ? "text-green-600" : "text-red-600"}`}>{state.message}</p>}
           </motion.form>
-        </div>
-
-        {/* Mapa */}
-        <div className="mt-16">
-          <CosmeticaMap dictionary={dictionary} />
         </div>
       </div>
     </section>
