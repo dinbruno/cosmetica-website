@@ -173,7 +173,7 @@ export default function Footer({ dictionary, lang }: { dictionary: Dictionary; l
                   alt={partner.name}
                   width={120} // Adjusted size for better visibility
                   height={60}
-                  className="object-contain filter brightness-0 invert" // Making logos white for dark bg
+                  className="object-contain filter brightness-30" // Making logos white for dark bg
                 />
               </div>
             ))}

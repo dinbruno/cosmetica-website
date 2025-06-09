@@ -24,10 +24,8 @@ const brands = [
 ];
 
 export default function BrandsMarquee({ dictionary }: { dictionary: Dictionary }) {
-  console.log("Original brands:", brands); // Debug
   // Temporarily use just the original brands for testing
   const extendedBrands = brands;
-  console.log("Extended brands:", extendedBrands); // Debug
 
   return (
     <div className="py-20 bg-white">
@@ -40,19 +38,17 @@ export default function BrandsMarquee({ dictionary }: { dictionary: Dictionary }
         <div className="relative w-full overflow-hidden group">
           <div className="flex animate-marquee group-hover:pause">
             {extendedBrands.map((brand, index) => {
-              console.log("Brand:", brand.name, "Logo:", brand.logo); // Debug
-
               // Fallback to first image if brand.logo is undefined
               const imageSrc = brand.logo || "/marcas/d075bb_6453e817fd26437280af3e78b00e1d2b~mv2.avif";
 
               return (
-                <div key={index} className="flex-shrink-0 w-52 sm:w-60 flex items-center justify-center mx-6 sm:mx-8 h-20">
+                <div key={index} className="flex-shrink-0  flex items-center justify-center mx-1 sm:mx-3 md:mx-6 h-20">
                   <Image
                     src={imageSrc}
                     alt={brand.name || `Brand ${index + 1}`}
                     width={180}
                     height={70}
-                    className="object-contain max-h-16 max-w-40 grayscale hover:grayscale-0 transition-all duration-300"
+                    className="object-contain max-h-12 sm:max-h-14 md:max-h-16 max-w-32 sm:max-w-36 md:max-w-40 grayscale hover:grayscale-0 transition-all duration-300"
                     priority={index < 10}
                     unoptimized={true}
                     onError={(e) => {

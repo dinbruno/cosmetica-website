@@ -7,6 +7,7 @@ import ProfessionalsSection from "@/components/home/professionals-section";
 import ServicesSection from "@/components/home/services-section";
 import BrandsMarquee from "@/components/home/brands-marquee";
 // import PartnersSection from "@/components/home/partners-section" // Removed
+import CosmeticaMap from "@/components/map/cosmetica-map";
 import ContactSection from "@/components/home/contact-section";
 import Footer from "@/components/footer";
 import MissionPage from "@/components/mission-page";
@@ -69,6 +70,7 @@ export default async function Home({ params }: { params: Promise<{ lang?: string
       <BrandsMarquee dictionary={dict.brands} />
       {/* <PartnersSection dictionary={dict.partners} /> // Removed */}
       <ContactSection dictionary={dict.contact} />
+      <CosmeticaMap dictionary={dict.contact} />
       <Footer dictionary={dict.footer} lang={lang} />
     </main>
   );

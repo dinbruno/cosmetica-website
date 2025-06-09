@@ -21,19 +21,20 @@ const aboutImages = [
   {
     src: "/images/about/pharmacist-handling-vial.avif",
     alt: "Farmacêutica Cosmética manuseando um frasco com precisão",
-    className: "z-10 col-span-2 row-span-3 md:col-span-1 md:row-span-3 rounded-3xl shadow-2xl",
+    className: "z-10 col-span-2 row-span-2 sm:col-span-2 sm:row-span-3 md:col-span-1 md:row-span-3 rounded-2xl sm:rounded-3xl shadow-2xl",
     parallaxFactor: 30,
   },
   {
     src: "/images/about/modern-laboratory.avif",
     alt: "Laboratório moderno da Cosmética Farmácia",
-    className: "z-20 col-start-2 row-start-2 md:col-start-1 md:row-start-3 rounded-2xl shadow-xl",
+    className: "z-20 col-start-1 row-start-3 sm:col-start-2 sm:row-start-2 md:col-start-1 md:row-start-3 rounded-xl sm:rounded-2xl shadow-xl",
     parallaxFactor: -20,
   },
   {
     src: "/images/about/smiling-pharmacist.avif",
     alt: "Farmacêutica Cosmética sorrindo durante atendimento",
-    className: "z-0 col-start-1 row-start-1 md:col-start-2 md:row-start-1 rounded-2xl shadow-lg opacity-90",
+    className:
+      "z-0 col-start-2 row-start-3 sm:col-start-1 sm:row-start-1 md:col-start-2 md:row-start-1 rounded-xl sm:rounded-2xl shadow-lg opacity-90",
     parallaxFactor: 10,
   },
 ];
@@ -74,7 +75,7 @@ export default function AboutSection({ dictionary }: { dictionary: Dictionary })
   };
 
   return (
-    <section id="about" className="py-28 lg:py-40 bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50 overflow-hidden relative">
+    <section id="about" className="py-16 sm:py-20 lg:py-28 xl:py-40 bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50 overflow-hidden relative">
       <motion.div
         className="absolute top-10 -left-20 w-72 h-72 bg-primary/5 rounded-full filter blur-3xl opacity-40"
         animate={{ x: [-30, 30, -30], y: [-15, 15, -15], scale: [1, 1.1, 1] }}
@@ -86,21 +87,23 @@ export default function AboutSection({ dictionary }: { dictionary: Dictionary })
         transition={{ duration: 35, repeat: Number.POSITIVE_INFINITY, ease: "linear", delay: 3 }}
       />
 
-      <div className="container max-w-7xl mx-auto px-4 relative z-10">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
-          className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+          className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center"
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
           <motion.div variants={textContentVariants} className="lg:pr-8 order-last lg:order-first">
-            <h2 className="text-4xl sm:text-5xl lg:text-[3.4rem] font-bold text-gray-800 mb-8 leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.4rem] font-bold text-gray-800 mb-6 sm:mb-8 leading-tight">
               {dictionary.title.part1}
-              <span className="bg-primary text-primary-foreground px-4 py-1 shadow-lg mx-2 inline-block">{dictionary.title.highlight}</span>
+              <span className="bg-primary text-primary-foreground px-2 sm:px-4 py-1 shadow-lg mx-1 sm:mx-2 inline-block text-2xl sm:text-3xl lg:text-4xl xl:text-[3.4rem]">
+                {dictionary.title.highlight}
+              </span>
               {dictionary.title.part2}
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-10 whitespace-pre-line">{dictionary.text}</p>
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8 sm:mb-10 whitespace-pre-line">{dictionary.text}</p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -109,7 +112,7 @@ export default function AboutSection({ dictionary }: { dictionary: Dictionary })
             >
               <Button
                 size="lg"
-                className="rounded-xl px-10 py-4 text-base font-semibold shadow-lg hover:bg-primary/90 hover:scale-105 transition-all duration-300"
+                className="rounded-xl px-6 sm:px-10 py-3 sm:py-4 text-sm sm:text-base font-semibold shadow-lg hover:bg-primary/90 hover:scale-105 transition-all duration-300 w-full sm:w-auto"
                 asChild
               >
                 <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
@@ -121,7 +124,7 @@ export default function AboutSection({ dictionary }: { dictionary: Dictionary })
 
           <motion.div
             variants={imageContainerVariants}
-            className="relative grid grid-cols-2 grid-rows-3 gap-4 min-h-[500px] md:min-h-[600px] lg:order-last"
+            className="relative grid grid-cols-2 grid-rows-3 gap-2 sm:gap-4 min-h-[350px] sm:min-h-[450px] md:min-h-[500px] lg:min-h-[600px] lg:order-last"
           >
             {aboutImages.map((img, index) => (
               <motion.div
@@ -136,7 +139,7 @@ export default function AboutSection({ dictionary }: { dictionary: Dictionary })
               </motion.div>
             ))}
             <motion.div
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border-4 border-white/30 rounded-full z-20 pointer-events-none"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 sm:w-24 md:w-32 h-20 sm:h-24 md:h-32 border-2 sm:border-4 border-white/30 rounded-full z-20 pointer-events-none"
               initial={{ opacity: 0, scale: 0.7 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, delay: 0.6 }}
