@@ -1,0 +1,142 @@
+{
+  "header": {
+    "about": "About Us",
+    "mission": "The Pharmacy",
+    "professionals": "Our Team",
+    "services": "Our Services",
+    "contact": "Contact Us",
+    "quote_button": "Quick Quote"
+  },
+  "hero": {
+    "title": "Innovation and Personalized Care in Every Formula.",
+    "subtitle": "At Cosmética, we blend the tradition of masterful compounding with the highest technology to promote your health and well-being.",
+    "quote_button": "Request a Quote"
+  },
+  "about": {
+    "title": {
+      "part1": "Complete Pharmaceutical ",
+      "highlight": "Guidance",
+      "part2": ""
+    },
+    "text": "Cosmética provides full-time pharmaceutical guidance. Our Pharmaceutical Care focuses on advising on the correct use of medications (interactions, dosage, usage instructions), cosmetics, and healthy lifestyle habits, directing to specialized medical care when necessary.",
+    "button_text": "Meet Our Pharmacists"
+  },
+  "professionals": {
+    "title": {
+      "part1": "Our ",
+      "highlight": "Dedicated Team",
+      "part2": ""
+    },
+    "subtitle": "Highly qualified professionals committed to your well-being."
+  },
+  "services": {
+    "title": {
+      "part1": "Personalized ",
+      "highlight": "Services",
+      "part2": " for You"
+    },
+    "general_title": {
+      "part1": "The Evolution of ",
+      "highlight": "Compounding Pharmacy",
+      "part2": ""
+    },
+    "vet_title": {
+      "part1": "Special Care for Your ",
+      "highlight": "Pet",
+      "part2": ""
+    },
+    "general_text": "Compounded formulations, rooted in ancient apothecaries, have evolved to uniquely serve each patient. At Cosmética, we combine our pharmacists' knowledge with cutting-edge technology, ensuring the quality and effectiveness of medications. We offer prescription pick-up and home delivery for your convenience in Curitiba.",
+    "vet_text": "We extend our care to all family members, including your best friend. We compound personalized veterinary formulations, adjusting doses, flavors, and pharmaceutical forms (like biscuits and pastes) to facilitate administration and ensure your pet's health.",
+    "quote_button": "Request Your Formula",
+    "pet_quote_button": "Formulas for Pets"
+  },
+  "contact": {
+    "title": {
+      "part1": "Get in ",
+      "highlight": "Touch",
+      "part2": " With Us"
+    },
+    "subtitle": "We are ready to assist you. Send your prescription, question, or suggestion.",
+    "name": "Full Name",
+    "email": "Your Best Email",
+    "message": "Your Message",
+    "send_button": "Send Message Now",
+    "find_us": "Where to Find Us",
+    "address_label": "Our Address",
+    "phone_label": "Phone",
+    "email_label": "Main Email",
+    "whatsapp_label": "WhatsApp",
+    "opening_hours_label": "Opening Hours",
+    "weekdays": "Monday to Friday",
+    "saturdays": "Saturdays",
+    "view_on_google_maps": "View on Google Maps"
+  },
+  "brands": {
+    "title": {
+      "part1": "We Work with the Best ",
+      "highlight": "Raw Materials",
+      "part2": ""
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "partners_title": "Our Partners",
+    "quick_nav": "Quick Navigation",
+    "contact_us": "Contact Us",
+    "follow_us": "Follow Us",
+    "company_info": "Company Details",
+    "technical_responsibility": "Technical Responsibility",
+    "licenses_authorizations": "Licenses & Authorizations",
+    "address_label": "Address",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "whatsapp_label": "WhatsApp",
+    "opening_hours_label": "Hours",
+    "weekdays": "Mon - Fri",
+    "saturdays": "Sat",
+    "nav_about": "About Us",
+    "nav_pharmacy": "The Pharmacy",
+    "nav_services": "Services",
+    "nav_professionals": "Professionals",
+    "nav_contact": "Contact"
+  },
+  "mission_page": {
+    "title": "Our History, Mission, and Values",
+    "timeline": {
+      "founding": {
+        "date": "January 2001",
+        "title": "The Founding of Cosmética",
+        "text": "Cosmética Compounding Pharmacy was founded in January 2001 by pharmacists Maite Chiodini and Patrícia L. Mocelin. Both shared the dream of building a benchmark compounding pharmacy, driven by valuable experience gained at the former O Boticário Compounding Pharmacy. Thanks to customer trust and team dedication, Cosmética quickly established itself as one of the leading pharmacies in the sector in Curitiba."
+      },
+      "mission": {
+        "date": "Our Mission",
+        "title": "To Promote Health and Well-being",
+        "text": "To actively contribute to the community's health and well-being by compounding medications and cosmetics with excellence in quality and effectiveness. We prioritize specialized and individualized pharmaceutical care, always aiming for the most appropriate treatment and the promotion of a healthy life."
+      },
+      "vision": {
+        "date": "Our Vision for the Future",
+        "title": "To Be a Benchmark in Compounding Care",
+        "text": "To be recognized as the leading compounding pharmacy and a benchmark in the magistral sector, excelling by assisting our clients in their pursuit of a better quality of life. We will achieve this through humanized and differentiated service, and by offering products and services of the highest qualification."
+      }
+    },
+    "values_title": "Our Core Values",
+    "values": {
+      "quality": {
+        "title": "Quality and Effectiveness",
+        "text": "Unwavering commitment to excellence and safety in every formula we develop."
+      },
+      "service": {
+        "title": "Humanized Service",
+        "text": "Individualized care and complete pharmaceutical attention, focused on each client's needs."
+      },
+      "trust": {
+        "title": "Trust and Transparency",
+        "text": "We build solid and lasting relationships based on ethics, transparency, and safety."
+      },
+      "innovation": {
+        "title": "Continuous Innovation",
+        "text": "We combine the tradition of masterful compounding with the latest technologies to always offer the best results."
+      }
+    }
+  }
+}

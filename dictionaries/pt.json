@@ -1,0 +1,142 @@
+{
+  "header": {
+    "about": "Sobre Nós",
+    "mission": "A Farmácia",
+    "professionals": "Nossa Equipe",
+    "services": "Nossos Serviços",
+    "contact": "Fale Conosco",
+    "quote_button": "Orçamento Rápido"
+  },
+  "hero": {
+    "title": "Inovação e Cuidado Personalizado em Cada Fórmula.",
+    "subtitle": "Na Cosmética, unimos a tradição da manipulação magistral com a mais alta tecnologia para promover sua saúde e bem-estar.",
+    "quote_button": "Faça um Orçamento"
+  },
+  "about": {
+    "title": {
+      "part1": "",
+      "highlight": "Assessoria",
+      "part2": " Farmacêutica Completa"
+    },
+    "text": "A Cosmética oferece assessoria farmacêutica em período integral. Nossa Atenção Farmacêutica é focada na orientação sobre o uso correto de medicamentos (interações, posologia, modo de usar), cosméticos e hábitos de vida saudáveis, direcionando para atendimento médico especializado quando necessário.",
+    "button_text": "Conheça Nossos Farmacêuticos"
+  },
+  "professionals": {
+    "title": {
+      "part1": "Nossa ",
+      "highlight": "Equipe",
+      "part2": " Dedicada"
+    },
+    "subtitle": "Profissionais altamente qualificados e comprometidos com o seu bem-estar."
+  },
+  "services": {
+    "title": {
+      "part1": "Serviços ",
+      "highlight": "Personalizados",
+      "part2": " para Você"
+    },
+    "general_title": {
+      "part1": "A Evolução da ",
+      "highlight": "Farmácia Magistral",
+      "part2": ""
+    },
+    "vet_title": {
+      "part1": "Cuidado Especial para seu ",
+      "highlight": "Animal de Estimação",
+      "part2": ""
+    },
+    "general_text": "A formulação magistral, com raízes nas antigas boticas, evoluiu para atender de forma única cada paciente. Na Cosmética, aliamos o conhecimento de nossos farmacêuticos à tecnologia de ponta, garantindo a qualidade e eficácia dos medicamentos. Oferecemos coleta de receitas e entrega em domicílio para sua conveniência em Curitiba.",
+    "vet_text": "Estendemos nosso cuidado a todos os membros da família, incluindo seu melhor amigo. Manipulamos formulações veterinárias personalizadas, ajustando doses, sabores e formas farmacêuticas (como biscoitos e pastas) para facilitar a administração e garantir a saúde do seu pet.",
+    "quote_button": "Solicite Sua Fórmula",
+    "pet_quote_button": "Fórmulas para Pets"
+  },
+  "contact": {
+    "title": {
+      "part1": "Entre em ",
+      "highlight": "Contato",
+      "part2": " "
+    },
+    "subtitle": "Estamos prontos para atender você. Envie sua receita, dúvida ou sugestão.",
+    "name": "Nome Completo",
+    "email": "Seu Melhor E-mail",
+    "message": "Sua Mensagem",
+    "send_button": "Enviar Mensagem Agora",
+    "find_us": "Onde Nos Encontrar",
+    "address_label": "Nosso Endereço",
+    "phone_label": "Telefone Fixo",
+    "email_label": "E-mail Principal",
+    "whatsapp_label": "WhatsApp",
+    "opening_hours_label": "Horário de Atendimento",
+    "weekdays": "Segunda à Sexta",
+    "saturdays": "Sábados",
+    "view_on_google_maps": "Ver no Google Maps"
+  },
+  "brands": {
+    "title": {
+      "part1": "Trabalhamos com as Melhores ",
+      "highlight": "Matérias-Primas",
+      "part2": ""
+    }
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "partners_title": "Nossos Parceiros",
+    "quick_nav": "Navegação Rápida",
+    "contact_us": "Fale Conosco",
+    "follow_us": "Siga-nos",
+    "company_info": "Dados da Empresa",
+    "technical_responsibility": "Responsabilidade Técnica",
+    "licenses_authorizations": "Licenças e Autorizações",
+    "address_label": "Endereço",
+    "phone_label": "Telefone",
+    "email_label": "E-mail",
+    "whatsapp_label": "WhatsApp",
+    "opening_hours_label": "Horários",
+    "weekdays": "Seg. à Sex.",
+    "saturdays": "Sáb.",
+    "nav_about": "Sobre Nós",
+    "nav_pharmacy": "A Farmácia",
+    "nav_services": "Serviços",
+    "nav_professionals": "Profissionais",
+    "nav_contact": "Contato"
+  },
+  "mission_page": {
+    "title": "Nossa História, Missão e Valores",
+    "timeline": {
+      "founding": {
+        "date": "Janeiro de 2001",
+        "title": "A Fundação da Cosmética",
+        "text": "A Cosmética Farmácia de Manipulação foi fundada em janeiro de 2001 pelas farmacêuticas Maite Chiodini e Patrícia L. Mocelin. Ambas traziam o sonho de construir uma farmácia de manipulação de referência, impulsionadas pela valiosa experiência adquirida na antiga Farmácia de Manipulação O Boticário. Graças à confiança dos clientes e à dedicação da equipe, a Cosmética rapidamente se consolidou como uma das principais farmácias do setor em Curitiba."
+      },
+      "mission": {
+        "date": "Nossa Missão",
+        "title": "Promover Saúde e Bem-Estar",
+        "text": "Contribuir ativamente para a saúde e o bem-estar da comunidade, através da manipulação de medicamentos e cosméticos com excelência em qualidade e eficácia. Priorizamos o atendimento farmacêutico especializado e individualizado, visando sempre o tratamento mais adequado e a promoção de uma vida saudável."
+      },
+      "vision": {
+        "date": "Nossa Visão de Futuro",
+        "title": "Ser Referência em Cuidado Magistral",
+        "text": "Ser reconhecida como a farmácia de manipulação líder e referência no setor magistral, destacando-nos por auxiliar nossos clientes na busca por uma melhor qualidade de vida. Alcançaremos isso através de um atendimento humanizado e diferenciado, e pela oferta de produtos e serviços da mais alta qualificação."
+      }
+    },
+    "values_title": "Nossos Valores Fundamentais",
+    "values": {
+      "quality": {
+        "title": "Qualidade e Eficácia",
+        "text": "Compromisso inabalável com a excelência e segurança em cada fórmula que desenvolvemos."
+      },
+      "service": {
+        "title": "Atendimento Humanizado",
+        "text": "Cuidado individualizado e atenção farmacêutica completa, focada nas necessidades de cada cliente."
+      },
+      "trust": {
+        "title": "Confiança e Transparência",
+        "text": "Construímos relações sólidas e duradouras, baseadas na ética, transparência e segurança."
+      },
+      "innovation": {
+        "title": "Inovação Contínua",
+        "text": "Aliamos a tradição da manipulação magistral com as mais recentes tecnologias para oferecer sempre os melhores resultados."
+      }
+    }
+  }
+}
